@@ -10,7 +10,7 @@ public class WebClient {
                 "    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n" +
                 "</head>\n" +
                 "<body>\n" +
-                "<h1>Form with GET</h1>\n" +
+                "<h1>MathServices</h1>\n" +
                 "<form action=\"/mathservices\">\n" +
                 "    <label for=\"fun\">Función:</label><br>\n" +
                 "    <input type=\"text\" id=\"fun\" name=\"function\" value=\"factors\"><br><br>\n" +
