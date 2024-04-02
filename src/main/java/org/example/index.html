@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Form Example</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+<h1>Form with GET</h1>
+<form action="/mathservices">
+    <label for="fun">Función:</label><br>
+    <input type="text" id="fun" name="function" value="factors"><br><br>
+    <label for="value">Valor:</label><br>
+    <input type="number" id="value" name="value" value="15"><br><br>
+    <input type="button" value="Submit" onclick="loadGetResp()">
+</form>
+<div id="getResp"></div>
+
+<script>
+    function loadGetResp() {
+        let fun = document.getElementById("fun").value;
+        let val = document.getElementById("value").value;
+        const xhttp = new XMLHttpRequest();
+        xhttp.onload = function() {
+            document.getElementById("getResp").innerHTML =
+            this.responseText;
+        }
+        xhttp.open("GET", "/mathservice/"+fun+"/"+val);
+        xhttp.send();
+    }
+</script>
+</body>
+</html>
