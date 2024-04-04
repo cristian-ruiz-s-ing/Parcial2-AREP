@@ -7,9 +7,6 @@ import static spark.Spark.*;
 public class MathServices {
     public static void main(String[] args){
         port(getPort());
-        get("/hello/:value", (req, res) -> {
-            return "Hola mundo"+ req.params("value");
-        });
         get("/factors/:value", (req, res) -> getFactors(req.params("value")));
         get("/primes/:value", (req, res) -> getPrimes(req.params("value")));
     }

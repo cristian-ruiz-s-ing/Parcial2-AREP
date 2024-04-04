@@ -8,9 +8,6 @@ import java.net.HttpURLConnection;
 import java.net.URL;
 import java.util.ArrayList;
 
-// ["http://localhost:4568/", "http://localhost:4569/"];
-
-
 public class ServiceProxy {
     static int temp = 0;
 
