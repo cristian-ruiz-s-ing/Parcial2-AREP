@@ -20,6 +20,8 @@ con esto ya se puede acceder desde el navegador y testear el funcionamiento de l
 http://ec2-3-91-215-147.compute-1.amazonaws.com:4567
 ```
 Debería verse así:
+
+
 ![funcionamiento](/src/main/resources/img/Funcionamiento.JPG)
 
 
@@ -36,3 +38,9 @@ A continuación se muestra evidencia de su funcionamiento en un corto video:
 <video width="320" height="240" controls>
   <source src="/src/main/resources/vid/EvidenciasParcial2AREP.mp4" type="video/mp4">
 </video>
+
+
+
+https://github.com/cristian-ruiz-s-ing/Parcial2-AREP/assets/55074072/183aa4e0-2e82-4678-b058-336f4fd3096e
+
+
