@@ -20,7 +20,7 @@ public class ServiceProxy {
         get("/", (req, res)-> WebClient.getClient());
 
         get("/mathservice/:fun/:value", (req, res) -> {
-            String[] URLMathServices = {"http://ec2-34-202-166-243.compute-1.amazonaws.com:4568/"+req.params("fun")+"/"+req.params("value"), "http://ec2-54-88-94-122.compute-1.amazonaws.com:4569/"+req.params("fun")+"/"+req.params("value")};
+            String[] URLMathServices = {"http://ec2-54-221-50-99.compute-1.amazonaws.com:4568/"+req.params("fun")+"/"+req.params("value"), "http://ec2-3-90-108-226.compute-1.amazonaws.com:4569/"+req.params("fun")+"/"+req.params("value")};
             // Round Robin ""
             URL obj = new URL(URLMathServices[temp]);
             System.out.println(obj);
